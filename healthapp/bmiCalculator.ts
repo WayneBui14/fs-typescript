@@ -12,5 +12,4 @@ const bmiCalculator = (height: number, weight: number): string => {
       return "Obesity range";
   }
 };
-
 console.log(bmiCalculator(180, 74));
