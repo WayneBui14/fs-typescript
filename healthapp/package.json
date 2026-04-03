@@ -4,14 +4,15 @@
   "description": "",
   "license": "ISC",
   "author": "Quang",
-  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "calculateBmi": "tsc && node bmiCalculator.ts",
-    "calculateExercises": "tsc && node exerciseCalculator.ts"
+    "calculateBmi": "ts-node src/bmiCalculator.ts",
+    "calculateExercises": "ts-node src/exerciseCalculator.ts"
   },
   "devDependencies": {
+    "@types/node": "^25.5.2",
+    "ts-node": "^10.9.2",
     "typescript": "^6.0.2"
   }
 }

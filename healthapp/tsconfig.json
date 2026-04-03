@@ -1,6 +1,9 @@
 {
     "compilerOptions": {
         "noImplicitAny": true,
-        "noEmit": true
+        "noEmit": true,
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "types": ["node"]
     }
 }

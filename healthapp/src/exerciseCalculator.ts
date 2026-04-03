@@ -1,3 +1,4 @@
+import { parseArguments } from "./utils/inputValidator";
 interface Result {
   periodLength: number;
   trainingDays: number;
@@ -29,4 +30,13 @@ const calculateExercises = (
     average,
   };
 };
-console.log(calculateExercises([1, 1, 2, 0, 3, 0, 2], 1));
+try {
+  const { target, daily_exercises } = parseArguments(process.argv);
+  console.log(calculateExercises(daily_exercises, target));
+} catch (error: unknown) {
+  let errorMessage = "Something bad happened.";
+  if (error instanceof Error) {
+    errorMessage += " Error: " + error.message;
+  }
+  console.log(errorMessage);
+}
