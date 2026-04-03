@@ -10,16 +10,25 @@ interface Result {
 }
 
 const calculateExercises = (
-  daily_exercises: number[],
   target: number,
+  daily_exercises: number[],
 ): Result => {
   const periodLength = daily_exercises.length;
   const trainingDays = daily_exercises.filter((day) => day > 0).length;
-  const success = trainingDays >= target;
-  const rating = trainingDays / periodLength;
-  const ratingDescription =
-    rating >= 0.5 ? "Good job" : "Not too bad but could be better";
   const average = daily_exercises.reduce((a, b) => a + b, 0) / periodLength;
+  let rating: number;
+  let ratingDescription: string;
+  if (average < target) {
+    rating = 2;
+    ratingDescription = "Not too bad but could be better";
+  } else if (average === target) {
+    rating = 1;
+    ratingDescription = "Good job";
+  } else {
+    rating = 3;
+    ratingDescription = "Excellent";
+  }
+  const success = average >= target;
   return {
     periodLength,
     trainingDays,
@@ -32,7 +41,7 @@ const calculateExercises = (
 };
 try {
   const { target, daily_exercises } = parseArguments(process.argv);
-  console.log(calculateExercises(daily_exercises, target));
+  console.log(calculateExercises(target, daily_exercises));
 } catch (error: unknown) {
   let errorMessage = "Something bad happened.";
   if (error instanceof Error) {
