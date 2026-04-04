@@ -9,7 +9,7 @@
     "noUnusedParameters": true, // Không cho phép tham số mà không sử dụng
     "noImplicitReturns": true, // Không cho phép hàm không trả về giá trị
     "noFallthroughCasesInSwitch": true, // Thiết lập an toàn về case trong switch
-    "module": "nodenext", // Sử dụng module system của node
+    "module": "NodeNext", // Sử dụng module system của node
     "allowImportingTsExtensions": true, // Cho phép import file .ts
     "target": "esnext" // Sử dụng ECMAScript mới nhất
   }

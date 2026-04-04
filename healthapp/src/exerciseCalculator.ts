@@ -1,4 +1,4 @@
-import { parseArguments } from "./utils/inputValidator";
+import { parseArguments } from "./utils/inputValidator.ts";
 interface Result {
   periodLength: number;
   trainingDays: number;

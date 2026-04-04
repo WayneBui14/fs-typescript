@@ -1,6 +1,6 @@
-import { isNotNumber } from "./utils/inputValidator";
+import { isNotNumber } from "./utils/inputValidator.ts";
 
-const bmiCalculator = (height: number, weight: number): string => {
+export const bmiCalculator = (height: number, weight: number): string => {
   const heightInMeters = height / 100;
   const bmi = weight / (heightInMeters * heightInMeters);
   switch (true) {
@@ -15,17 +15,19 @@ const bmiCalculator = (height: number, weight: number): string => {
   }
 };
 
-try {
-  const height = Number(process.argv[2]);
-  const weight = Number(process.argv[3]);
-  if (isNotNumber(height) || isNotNumber(weight)) {
-    throw new Error("Both height and weight must be numbers");
+if (process.argv[1] === import.meta.filename) {
+  try {
+    const height = Number(process.argv[2]);
+    const weight = Number(process.argv[3]);
+    if (isNotNumber(height) || isNotNumber(weight)) {
+      throw new Error("Both height and weight must be numbers");
+    }
+    console.log(bmiCalculator(height, weight));
+  } catch (error: unknown) {
+    let errorMessage = "Something bad happened.";
+    if (error instanceof Error) {
+      errorMessage += " Error: " + error.message;
+    }
+    console.log(errorMessage);
   }
-  console.log(bmiCalculator(height, weight));
-} catch (error: unknown) {
-  let errorMessage = "Something bad happened.";
-  if (error instanceof Error) {
-    errorMessage += " Error: " + error.message;
-  }
-  console.log(errorMessage);
 }

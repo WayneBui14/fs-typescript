@@ -1,5 +1,6 @@
 {
   "name": "healthapp",
+  "type": "module",
   "version": "1.0.0",
   "description": "",
   "license": "ISC",
@@ -10,13 +11,14 @@
     "calculateBmi": "ts-node src/bmiCalculator.ts",
     "calculateExercises": "ts-node src/exerciseCalculator.ts",
     "start": "ts-node index.ts",
-    "dev": "ts-node-dev index.ts"
+    "dev": "tsx --watch index.ts"
   },
   "devDependencies": {
     "@types/express": "^5.0.6",
     "@types/node": "^25.5.2",
     "concurrently": "^9.2.1",
     "ts-node": "^10.9.2",
+    "tsx": "^4.21.0",
     "typescript": "^6.0.2"
   },
   "dependencies": {
