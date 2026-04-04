@@ -1,9 +1,16 @@
 {
-    "compilerOptions": {
-        "noImplicitAny": true,
-        "noEmit": true,
-        "moduleResolution": "node",
-        "esModuleInterop": true,
-        "types": ["node"]
-    }
+  "compilerOptions": {
+    "noImplicitAny": true, // Không cho phép khai báo biến mà không khai báo kiểu dữ liệu
+    "noEmit": true, // Không cho phép biên dịch
+    "moduleResolution": "NodeNext", // Cách typescript tìm module giống node
+    "esModuleInterop": true, // Cải thiện tương thích import module CommonJS
+    "types": ["node"], // Cho phép sử dụng types của node
+    "noUnusedLocals": true, // Không cho phép khai báo biến mà không sử dụng
+    "noUnusedParameters": true, // Không cho phép tham số mà không sử dụng
+    "noImplicitReturns": true, // Không cho phép hàm không trả về giá trị
+    "noFallthroughCasesInSwitch": true, // Thiết lập an toàn về case trong switch
+    "module": "nodenext", // Sử dụng module system của node
+    "allowImportingTsExtensions": true, // Cho phép import file .ts
+    "target": "esnext" // Sử dụng ECMAScript mới nhất
+  }
 }
