@@ -1,4 +1,4 @@
-POST http://localhost:3003/exercises
+POST http://localhost:3000/exercises
 Content-Type: application/json
 
 {
@@ -6,7 +6,7 @@ Content-Type: application/json
   "target": 2.5
 }
 ###
-POST http://localhost:3003/exercises
+POST http://localhost:3000/exercises
 Content-Type: application/json
 
 {
@@ -14,7 +14,7 @@ Content-Type: application/json
   "target": 2.5
 }
 ###
-POST http://localhost:3003/exercises
+POST http://localhost:3000/exercises
 Content-Type: application/json
 
 {
@@ -22,7 +22,7 @@ Content-Type: application/json
   "target": "Yolo"
 }
 ###
-POST http://localhost:3003/exercises
+POST http://localhost:3000/exercises
 Content-Type: application/json
 
 {
