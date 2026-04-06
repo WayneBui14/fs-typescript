@@ -6,6 +6,11 @@ import { calculateExercises } from "./src/exerciseCalculator.ts";
 const app = express();
 app.use(express.json());
 
+interface ExerciseValues {
+  daily_exercises: number[];
+  target: number;
+}
+
 app.get("/hello", (_req, res) => {
   return res.send("Hello Full Stack!");
 });
@@ -23,8 +28,8 @@ app.get("/bmi", (_req, res) => {
 });
 
 app.post("/exercises", (_req, res) => {
-  const target = _req.body.target;
-  const daily_exercises = _req.body.daily_exercises;
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+  const { target, daily_exercises }: ExerciseValues = _req.body;
   if (!target || !daily_exercises) {
     return res.status(400).json({ error: "parameters missing" });
   }

@@ -12,7 +12,7 @@
     "calculateExercises": "ts-node src/exerciseCalculator.ts",
     "start": "ts-node index.ts",
     "dev": "tsx --watch index.ts",
-    "lint": "eslint ."
+    "lint": "eslint . --ext .ts"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
