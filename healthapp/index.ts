@@ -2,14 +2,10 @@ import express from "express";
 import { bmiCalculator } from "./src/bmiCalculator.ts";
 import { isNotNumber } from "./src/utils/inputValidator.ts";
 import { calculateExercises } from "./src/exerciseCalculator.ts";
+import { type ExerciseValues } from "./src/utils/inputValidator.ts";
 
 const app = express();
 app.use(express.json());
-
-interface ExerciseValues {
-  daily_exercises: number[];
-  target: number;
-}
 
 app.get("/hello", (_req, res) => {
   return res.send("Hello Full Stack!");

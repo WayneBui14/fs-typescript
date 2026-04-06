@@ -1,4 +1,4 @@
-interface ExerciseValues {
+export interface ExerciseValues {
   daily_exercises: number[];
   target: number;
 }
