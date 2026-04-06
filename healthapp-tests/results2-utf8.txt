@@ -1,0 +1,570 @@
+﻿
+Running 11 tests using 1 worker
+
+  Γ£ÿ   1 tests\api.test.ts:5:9 ΓÇ║ Health App API ΓÇ║ GET /hello ΓÇ║ should return greeting message (35ms)
+  Γ£ÿ   2 tests\api.test.ts:5:9 ΓÇ║ Health App API ΓÇ║ GET /hello ΓÇ║ should return greeting message (retry #1) (58ms)
+  Γ£ÿ   3 tests\api.test.ts:5:9 ΓÇ║ Health App API ΓÇ║ GET /hello ΓÇ║ should return greeting message (retry #2) (57ms)
+  Γ£ô   4 tests\api.test.ts:17:9 ΓÇ║ Health App API ΓÇ║ GET /bmi ΓÇ║ should calculate BMI correctly (44ms)
+  Γ£ÿ   5 tests\api.test.ts:30:9 ΓÇ║ Health App API ΓÇ║ GET /bmi ΓÇ║ should return error for missing height parameter (8ms)
+  Γ£ÿ   6 tests\api.test.ts:30:9 ΓÇ║ Health App API ΓÇ║ GET /bmi ΓÇ║ should return error for missing height parameter (retry #1) (62ms)
+  Γ£ÿ   7 tests\api.test.ts:30:9 ΓÇ║ Health App API ΓÇ║ GET /bmi ΓÇ║ should return error for missing height parameter (retry #2) (45ms)
+  Γ£ÿ   8 tests\api.test.ts:39:9 ΓÇ║ Health App API ΓÇ║ GET /bmi ΓÇ║ should return error for missing weight parameter (35ms)
+  Γ£ÿ   9 tests\api.test.ts:39:9 ΓÇ║ Health App API ΓÇ║ GET /bmi ΓÇ║ should return error for missing weight parameter (retry #1) (56ms)
+  Γ£ÿ  10 tests\api.test.ts:39:9 ΓÇ║ Health App API ΓÇ║ GET /bmi ΓÇ║ should return error for missing weight parameter (retry #2) (36ms)
+  Γ£ÿ  11 tests\api.test.ts:48:9 ΓÇ║ Health App API ΓÇ║ GET /bmi ΓÇ║ should return error for non-numeric height (37ms)
+  Γ£ÿ  12 tests\api.test.ts:48:9 ΓÇ║ Health App API ΓÇ║ GET /bmi ΓÇ║ should return error for non-numeric height (retry #1) (57ms)
+  Γ£ÿ  13 tests\api.test.ts:48:9 ΓÇ║ Health App API ΓÇ║ GET /bmi ΓÇ║ should return error for non-numeric height (retry #2) (39ms)
+  Γ£ÿ  14 tests\api.test.ts:57:9 ΓÇ║ Health App API ΓÇ║ GET /bmi ΓÇ║ should return error for non-numeric weight (39ms)
+  Γ£ÿ  15 tests\api.test.ts:57:9 ΓÇ║ Health App API ΓÇ║ GET /bmi ΓÇ║ should return error for non-numeric weight (retry #1) (54ms)
+  Γ£ÿ  16 tests\api.test.ts:57:9 ΓÇ║ Health App API ΓÇ║ GET /bmi ΓÇ║ should return error for non-numeric weight (retry #2) (34ms)
+  Γ£ô  17 tests\api.test.ts:68:9 ΓÇ║ Health App API ΓÇ║ POST /exercises ΓÇ║ should calculate exercise statistics correctly (42ms)
+  Γ£ÿ  18 tests\api.test.ts:89:9 ΓÇ║ Health App API ΓÇ║ POST /exercises ΓÇ║ should return error for missing daily_exercises (9ms)
+  Γ£ÿ  19 tests\api.test.ts:89:9 ΓÇ║ Health App API ΓÇ║ POST /exercises ΓÇ║ should return error for missing daily_exercises (retry #1) (55ms)
+  Γ£ÿ  20 tests\api.test.ts:89:9 ΓÇ║ Health App API ΓÇ║ POST /exercises ΓÇ║ should return error for missing daily_exercises (retry #2) (38ms)
+  Γ£ÿ  21 tests\api.test.ts:100:9 ΓÇ║ Health App API ΓÇ║ POST /exercises ΓÇ║ should return error for missing target (37ms)
+  Γ£ÿ  22 tests\api.test.ts:100:9 ΓÇ║ Health App API ΓÇ║ POST /exercises ΓÇ║ should return error for missing target (retry #1) (62ms)
+  Γ£ÿ  23 tests\api.test.ts:100:9 ΓÇ║ Health App API ΓÇ║ POST /exercises ΓÇ║ should return error for missing target (retry #2) (38ms)
+  Γ£ÿ  24 tests\api.test.ts:111:9 ΓÇ║ Health App API ΓÇ║ POST /exercises ΓÇ║ should return error for non-numeric target (37ms)
+  Γ£ÿ  25 tests\api.test.ts:111:9 ΓÇ║ Health App API ΓÇ║ POST /exercises ΓÇ║ should return error for non-numeric target (retry #1) (58ms)
+  Γ£ÿ  26 tests\api.test.ts:111:9 ΓÇ║ Health App API ΓÇ║ POST /exercises ΓÇ║ should return error for non-numeric target (retry #2) (41ms)
+  Γ£ÿ  27 tests\api.test.ts:123:9 ΓÇ║ Health App API ΓÇ║ POST /exercises ΓÇ║ should return error for non-numeric values in daily_exercises (39ms)
+  Γ£ÿ  28 tests\api.test.ts:123:9 ΓÇ║ Health App API ΓÇ║ POST /exercises ΓÇ║ should return error for non-numeric values in daily_exercises (retry #1) (62ms)
+  Γ£ÿ  29 tests\api.test.ts:123:9 ΓÇ║ Health App API ΓÇ║ POST /exercises ΓÇ║ should return error for non-numeric values in daily_exercises (retry #2) (39ms)
+
+
+  1) tests\api.test.ts:5:9 ΓÇ║ Health App API ΓÇ║ GET /hello ΓÇ║ should return greeting message ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBeTruthy[2m()[22m
+
+    Received: [31mfalse[39m
+
+       6 |       const response = await request.get('/hello');
+       7 |       
+    >  8 |       expect(response.ok()).toBeTruthy();
+         |                             ^
+       9 |       expect(response.status()).toBe(200);
+      10 |       
+      11 |       const text = await response.text();
+        at C:\AOI Python\fs-typescript\healthapp-tests\tests\api.test.ts:8:29
+
+    Retry #1 ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBeTruthy[2m()[22m
+
+    Received: [31mfalse[39m
+
+       6 |       const response = await request.get('/hello');
+       7 |       
+    >  8 |       expect(response.ok()).toBeTruthy();
+         |                             ^
+       9 |       expect(response.status()).toBe(200);
+      10 |       
+      11 |       const text = await response.text();
+        at C:\AOI Python\fs-typescript\healthapp-tests\tests\api.test.ts:8:29
+
+    attachment #1: trace (application/zip) ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+    test-results\api-Health-App-API-GET-hello-should-return-greeting-message-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\api-Health-App-API-GET-hello-should-return-greeting-message-retry1\trace.zip
+
+    ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+
+    Retry #2 ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBeTruthy[2m()[22m
+
+    Received: [31mfalse[39m
+
+       6 |       const response = await request.get('/hello');
+       7 |       
+    >  8 |       expect(response.ok()).toBeTruthy();
+         |                             ^
+       9 |       expect(response.status()).toBe(200);
+      10 |       
+      11 |       const text = await response.text();
+        at C:\AOI Python\fs-typescript\healthapp-tests\tests\api.test.ts:8:29
+
+  2) tests\api.test.ts:30:9 ΓÇ║ Health App API ΓÇ║ GET /bmi ΓÇ║ should return error for missing height parameter 
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m400[39m
+    Received: [31m200[39m
+
+      31 |       const response = await request.get('/bmi?weight=72');
+      32 |       
+    > 33 |       expect(response.status()).toBe(400);
+         |                                 ^
+      34 |       
+      35 |       const body = await response.json();
+      36 |       expect(body).toHaveProperty('error', 'malformatted parameters');
+        at C:\AOI Python\fs-typescript\healthapp-tests\tests\api.test.ts:33:33
+
+    Retry #1 ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m400[39m
+    Received: [31m200[39m
+
+      31 |       const response = await request.get('/bmi?weight=72');
+      32 |       
+    > 33 |       expect(response.status()).toBe(400);
+         |                                 ^
+      34 |       
+      35 |       const body = await response.json();
+      36 |       expect(body).toHaveProperty('error', 'malformatted parameters');
+        at C:\AOI Python\fs-typescript\healthapp-tests\tests\api.test.ts:33:33
+
+    attachment #1: trace (application/zip) ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+    test-results\api-Health-App-API-GET-bmi-591fb-or-missing-height-parameter-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\api-Health-App-API-GET-bmi-591fb-or-missing-height-parameter-retry1\trace.zip
+
+    ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+
+    Retry #2 ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m400[39m
+    Received: [31m200[39m
+
+      31 |       const response = await request.get('/bmi?weight=72');
+      32 |       
+    > 33 |       expect(response.status()).toBe(400);
+         |                                 ^
+      34 |       
+      35 |       const body = await response.json();
+      36 |       expect(body).toHaveProperty('error', 'malformatted parameters');
+        at C:\AOI Python\fs-typescript\healthapp-tests\tests\api.test.ts:33:33
+
+  3) tests\api.test.ts:39:9 ΓÇ║ Health App API ΓÇ║ GET /bmi ΓÇ║ should return error for missing weight parameter 
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m400[39m
+    Received: [31m200[39m
+
+      40 |       const response = await request.get('/bmi?height=180');
+      41 |       
+    > 42 |       expect(response.status()).toBe(400);
+         |                                 ^
+      43 |       
+      44 |       const body = await response.json();
+      45 |       expect(body).toHaveProperty('error', 'malformatted parameters');
+        at C:\AOI Python\fs-typescript\healthapp-tests\tests\api.test.ts:42:33
+
+    Retry #1 ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m400[39m
+    Received: [31m200[39m
+
+      40 |       const response = await request.get('/bmi?height=180');
+      41 |       
+    > 42 |       expect(response.status()).toBe(400);
+         |                                 ^
+      43 |       
+      44 |       const body = await response.json();
+      45 |       expect(body).toHaveProperty('error', 'malformatted parameters');
+        at C:\AOI Python\fs-typescript\healthapp-tests\tests\api.test.ts:42:33
+
+    attachment #1: trace (application/zip) ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+    test-results\api-Health-App-API-GET-bmi-a23cb-or-missing-weight-parameter-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\api-Health-App-API-GET-bmi-a23cb-or-missing-weight-parameter-retry1\trace.zip
+
+    ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+
+    Retry #2 ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m400[39m
+    Received: [31m200[39m
+
+      40 |       const response = await request.get('/bmi?height=180');
+      41 |       
+    > 42 |       expect(response.status()).toBe(400);
+         |                                 ^
+      43 |       
+      44 |       const body = await response.json();
+      45 |       expect(body).toHaveProperty('error', 'malformatted parameters');
+        at C:\AOI Python\fs-typescript\healthapp-tests\tests\api.test.ts:42:33
+
+  4) tests\api.test.ts:48:9 ΓÇ║ Health App API ΓÇ║ GET /bmi ΓÇ║ should return error for non-numeric height 
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m400[39m
+    Received: [31m200[39m
+
+      49 |       const response = await request.get('/bmi?height=abc&weight=72');
+      50 |       
+    > 51 |       expect(response.status()).toBe(400);
+         |                                 ^
+      52 |       
+      53 |       const body = await response.json();
+      54 |       expect(body).toHaveProperty('error', 'malformatted parameters');
+        at C:\AOI Python\fs-typescript\healthapp-tests\tests\api.test.ts:51:33
+
+    Retry #1 ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m400[39m
+    Received: [31m200[39m
+
+      49 |       const response = await request.get('/bmi?height=abc&weight=72');
+      50 |       
+    > 51 |       expect(response.status()).toBe(400);
+         |                                 ^
+      52 |       
+      53 |       const body = await response.json();
+      54 |       expect(body).toHaveProperty('error', 'malformatted parameters');
+        at C:\AOI Python\fs-typescript\healthapp-tests\tests\api.test.ts:51:33
+
+    attachment #1: trace (application/zip) ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+    test-results\api-Health-App-API-GET-bmi-5bb33-rror-for-non-numeric-height-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\api-Health-App-API-GET-bmi-5bb33-rror-for-non-numeric-height-retry1\trace.zip
+
+    ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+
+    Retry #2 ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m400[39m
+    Received: [31m200[39m
+
+      49 |       const response = await request.get('/bmi?height=abc&weight=72');
+      50 |       
+    > 51 |       expect(response.status()).toBe(400);
+         |                                 ^
+      52 |       
+      53 |       const body = await response.json();
+      54 |       expect(body).toHaveProperty('error', 'malformatted parameters');
+        at C:\AOI Python\fs-typescript\healthapp-tests\tests\api.test.ts:51:33
+
+  5) tests\api.test.ts:57:9 ΓÇ║ Health App API ΓÇ║ GET /bmi ΓÇ║ should return error for non-numeric weight 
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m400[39m
+    Received: [31m200[39m
+
+      58 |       const response = await request.get('/bmi?height=180&weight=xyz');
+      59 |       
+    > 60 |       expect(response.status()).toBe(400);
+         |                                 ^
+      61 |       
+      62 |       const body = await response.json();
+      63 |       expect(body).toHaveProperty('error', 'malformatted parameters');
+        at C:\AOI Python\fs-typescript\healthapp-tests\tests\api.test.ts:60:33
+
+    Retry #1 ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m400[39m
+    Received: [31m200[39m
+
+      58 |       const response = await request.get('/bmi?height=180&weight=xyz');
+      59 |       
+    > 60 |       expect(response.status()).toBe(400);
+         |                                 ^
+      61 |       
+      62 |       const body = await response.json();
+      63 |       expect(body).toHaveProperty('error', 'malformatted parameters');
+        at C:\AOI Python\fs-typescript\healthapp-tests\tests\api.test.ts:60:33
+
+    attachment #1: trace (application/zip) ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+    test-results\api-Health-App-API-GET-bmi-a7ca5-rror-for-non-numeric-weight-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\api-Health-App-API-GET-bmi-a7ca5-rror-for-non-numeric-weight-retry1\trace.zip
+
+    ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+
+    Retry #2 ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m400[39m
+    Received: [31m200[39m
+
+      58 |       const response = await request.get('/bmi?height=180&weight=xyz');
+      59 |       
+    > 60 |       expect(response.status()).toBe(400);
+         |                                 ^
+      61 |       
+      62 |       const body = await response.json();
+      63 |       expect(body).toHaveProperty('error', 'malformatted parameters');
+        at C:\AOI Python\fs-typescript\healthapp-tests\tests\api.test.ts:60:33
+
+  6) tests\api.test.ts:89:9 ΓÇ║ Health App API ΓÇ║ POST /exercises ΓÇ║ should return error for missing daily_exercises 
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoHaveProperty[2m([22m[32mpath[39m[2m, [22m[32mvalue[39m[2m)[22m
+
+    Expected path: [32m"error"[39m
+
+    Expected value: [32m"parameters[7m missing[27m"[39m
+    Received value: [31m"[7mMissing [27mparameters"[39m
+
+       95 |       
+       96 |       const body = await response.json();
+    >  97 |       expect(body).toHaveProperty('error', 'parameters missing');
+          |                    ^
+       98 |     });
+       99 |
+      100 |     test('should return error for missing target', async ({ request }) => {
+        at C:\AOI Python\fs-typescript\healthapp-tests\tests\api.test.ts:97:20
+
+    Retry #1 ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoHaveProperty[2m([22m[32mpath[39m[2m, [22m[32mvalue[39m[2m)[22m
+
+    Expected path: [32m"error"[39m
+
+    Expected value: [32m"parameters[7m missing[27m"[39m
+    Received value: [31m"[7mMissing [27mparameters"[39m
+
+       95 |       
+       96 |       const body = await response.json();
+    >  97 |       expect(body).toHaveProperty('error', 'parameters missing');
+          |                    ^
+       98 |     });
+       99 |
+      100 |     test('should return error for missing target', async ({ request }) => {
+        at C:\AOI Python\fs-typescript\healthapp-tests\tests\api.test.ts:97:20
+
+    attachment #1: trace (application/zip) ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+    test-results\api-Health-App-API-POST-ex-2f42d-for-missing-daily-exercises-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\api-Health-App-API-POST-ex-2f42d-for-missing-daily-exercises-retry1\trace.zip
+
+    ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+
+    Retry #2 ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoHaveProperty[2m([22m[32mpath[39m[2m, [22m[32mvalue[39m[2m)[22m
+
+    Expected path: [32m"error"[39m
+
+    Expected value: [32m"parameters[7m missing[27m"[39m
+    Received value: [31m"[7mMissing [27mparameters"[39m
+
+       95 |       
+       96 |       const body = await response.json();
+    >  97 |       expect(body).toHaveProperty('error', 'parameters missing');
+          |                    ^
+       98 |     });
+       99 |
+      100 |     test('should return error for missing target', async ({ request }) => {
+        at C:\AOI Python\fs-typescript\healthapp-tests\tests\api.test.ts:97:20
+
+  7) tests\api.test.ts:100:9 ΓÇ║ Health App API ΓÇ║ POST /exercises ΓÇ║ should return error for missing target 
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoHaveProperty[2m([22m[32mpath[39m[2m, [22m[32mvalue[39m[2m)[22m
+
+    Expected path: [32m"error"[39m
+
+    Expected value: [32m"parameters[7m missing[27m"[39m
+    Received value: [31m"[7mMissing [27mparameters"[39m
+
+      106 |       
+      107 |       const body = await response.json();
+    > 108 |       expect(body).toHaveProperty('error', 'parameters missing');
+          |                    ^
+      109 |     });
+      110 |
+      111 |     test('should return error for non-numeric target', async ({ request }) => {
+        at C:\AOI Python\fs-typescript\healthapp-tests\tests\api.test.ts:108:20
+
+    Retry #1 ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoHaveProperty[2m([22m[32mpath[39m[2m, [22m[32mvalue[39m[2m)[22m
+
+    Expected path: [32m"error"[39m
+
+    Expected value: [32m"parameters[7m missing[27m"[39m
+    Received value: [31m"[7mMissing [27mparameters"[39m
+
+      106 |       
+      107 |       const body = await response.json();
+    > 108 |       expect(body).toHaveProperty('error', 'parameters missing');
+          |                    ^
+      109 |     });
+      110 |
+      111 |     test('should return error for non-numeric target', async ({ request }) => {
+        at C:\AOI Python\fs-typescript\healthapp-tests\tests\api.test.ts:108:20
+
+    attachment #1: trace (application/zip) ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+    test-results\api-Health-App-API-POST-ex-cfe1a-rn-error-for-missing-target-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\api-Health-App-API-POST-ex-cfe1a-rn-error-for-missing-target-retry1\trace.zip
+
+    ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+
+    Retry #2 ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoHaveProperty[2m([22m[32mpath[39m[2m, [22m[32mvalue[39m[2m)[22m
+
+    Expected path: [32m"error"[39m
+
+    Expected value: [32m"parameters[7m missing[27m"[39m
+    Received value: [31m"[7mMissing [27mparameters"[39m
+
+      106 |       
+      107 |       const body = await response.json();
+    > 108 |       expect(body).toHaveProperty('error', 'parameters missing');
+          |                    ^
+      109 |     });
+      110 |
+      111 |     test('should return error for non-numeric target', async ({ request }) => {
+        at C:\AOI Python\fs-typescript\healthapp-tests\tests\api.test.ts:108:20
+
+  8) tests\api.test.ts:111:9 ΓÇ║ Health App API ΓÇ║ POST /exercises ΓÇ║ should return error for non-numeric target 
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoHaveProperty[2m([22m[32mpath[39m[2m, [22m[32mvalue[39m[2m)[22m
+
+    Expected path: [32m"error"[39m
+
+    Expected value: [32m"[7mm[27malformatted parameters"[39m
+    Received value: [31m"[7mM[27malformatted parameters"[39m
+
+      118 |       
+      119 |       const body = await response.json();
+    > 120 |       expect(body).toHaveProperty('error', 'malformatted parameters');
+          |                    ^
+      121 |     });
+      122 |
+      123 |     test('should return error for non-numeric values in daily_exercises', async ({ request }) => {
+        at C:\AOI Python\fs-typescript\healthapp-tests\tests\api.test.ts:120:20
+
+    Retry #1 ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoHaveProperty[2m([22m[32mpath[39m[2m, [22m[32mvalue[39m[2m)[22m
+
+    Expected path: [32m"error"[39m
+
+    Expected value: [32m"[7mm[27malformatted parameters"[39m
+    Received value: [31m"[7mM[27malformatted parameters"[39m
+
+      118 |       
+      119 |       const body = await response.json();
+    > 120 |       expect(body).toHaveProperty('error', 'malformatted parameters');
+          |                    ^
+      121 |     });
+      122 |
+      123 |     test('should return error for non-numeric values in daily_exercises', async ({ request }) => {
+        at C:\AOI Python\fs-typescript\healthapp-tests\tests\api.test.ts:120:20
+
+    attachment #1: trace (application/zip) ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+    test-results\api-Health-App-API-POST-ex-041f2-rror-for-non-numeric-target-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\api-Health-App-API-POST-ex-041f2-rror-for-non-numeric-target-retry1\trace.zip
+
+    ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+
+    Retry #2 ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoHaveProperty[2m([22m[32mpath[39m[2m, [22m[32mvalue[39m[2m)[22m
+
+    Expected path: [32m"error"[39m
+
+    Expected value: [32m"[7mm[27malformatted parameters"[39m
+    Received value: [31m"[7mM[27malformatted parameters"[39m
+
+      118 |       
+      119 |       const body = await response.json();
+    > 120 |       expect(body).toHaveProperty('error', 'malformatted parameters');
+          |                    ^
+      121 |     });
+      122 |
+      123 |     test('should return error for non-numeric values in daily_exercises', async ({ request }) => {
+        at C:\AOI Python\fs-typescript\healthapp-tests\tests\api.test.ts:120:20
+
+  9) tests\api.test.ts:123:9 ΓÇ║ Health App API ΓÇ║ POST /exercises ΓÇ║ should return error for non-numeric values in daily_exercises 
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoHaveProperty[2m([22m[32mpath[39m[2m, [22m[32mvalue[39m[2m)[22m
+
+    Expected path: [32m"error"[39m
+
+    Expected value: [32m"[7mm[27malformatted parameters"[39m
+    Received value: [31m"[7mM[27malformatted parameters"[39m
+
+      130 |       
+      131 |       const body = await response.json();
+    > 132 |       expect(body).toHaveProperty('error', 'malformatted parameters');
+          |                    ^
+      133 |     });
+      134 |   });
+      135 | });
+        at C:\AOI Python\fs-typescript\healthapp-tests\tests\api.test.ts:132:20
+
+    Retry #1 ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoHaveProperty[2m([22m[32mpath[39m[2m, [22m[32mvalue[39m[2m)[22m
+
+    Expected path: [32m"error"[39m
+
+    Expected value: [32m"[7mm[27malformatted parameters"[39m
+    Received value: [31m"[7mM[27malformatted parameters"[39m
+
+      130 |       
+      131 |       const body = await response.json();
+    > 132 |       expect(body).toHaveProperty('error', 'malformatted parameters');
+          |                    ^
+      133 |     });
+      134 |   });
+      135 | });
+        at C:\AOI Python\fs-typescript\healthapp-tests\tests\api.test.ts:132:20
+
+    attachment #1: trace (application/zip) ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+    test-results\api-Health-App-API-POST-ex-a8e7f-c-values-in-daily-exercises-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\api-Health-App-API-POST-ex-a8e7f-c-values-in-daily-exercises-retry1\trace.zip
+
+    ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+
+    Retry #2 ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoHaveProperty[2m([22m[32mpath[39m[2m, [22m[32mvalue[39m[2m)[22m
+
+    Expected path: [32m"error"[39m
+
+    Expected value: [32m"[7mm[27malformatted parameters"[39m
+    Received value: [31m"[7mM[27malformatted parameters"[39m
+
+      130 |       
+      131 |       const body = await response.json();
+    > 132 |       expect(body).toHaveProperty('error', 'malformatted parameters');
+          |                    ^
+      133 |     });
+      134 |   });
+      135 | });
+        at C:\AOI Python\fs-typescript\healthapp-tests\tests\api.test.ts:132:20
+
+  9 failed
+    tests\api.test.ts:5:9 ΓÇ║ Health App API ΓÇ║ GET /hello ΓÇ║ should return greeting message ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+    tests\api.test.ts:30:9 ΓÇ║ Health App API ΓÇ║ GET /bmi ΓÇ║ should return error for missing height parameter 
+    tests\api.test.ts:39:9 ΓÇ║ Health App API ΓÇ║ GET /bmi ΓÇ║ should return error for missing weight parameter 
+    tests\api.test.ts:48:9 ΓÇ║ Health App API ΓÇ║ GET /bmi ΓÇ║ should return error for non-numeric height 
+    tests\api.test.ts:57:9 ΓÇ║ Health App API ΓÇ║ GET /bmi ΓÇ║ should return error for non-numeric weight 
+    tests\api.test.ts:89:9 ΓÇ║ Health App API ΓÇ║ POST /exercises ΓÇ║ should return error for missing daily_exercises 
+    tests\api.test.ts:100:9 ΓÇ║ Health App API ΓÇ║ POST /exercises ΓÇ║ should return error for missing target 
+    tests\api.test.ts:111:9 ΓÇ║ Health App API ΓÇ║ POST /exercises ΓÇ║ should return error for non-numeric target 
+    tests\api.test.ts:123:9 ΓÇ║ Health App API ΓÇ║ POST /exercises ΓÇ║ should return error for non-numeric values in daily_exercises 
+  2 passed (34.4s)

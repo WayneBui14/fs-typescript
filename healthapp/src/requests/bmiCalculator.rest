@@ -1,5 +1,5 @@
 GET http://localhost:3000/bmi?height=180&weight=70
 ###
-GET http://localhost:3000/bmi?height=180&weight
+GET http://localhost:3000/bmi?height=180&weight=xyz
 ###
 GET http://localhost:3000/bmi?height=Yolo&weight=70
