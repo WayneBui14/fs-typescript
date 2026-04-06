@@ -39,13 +39,16 @@ export const calculateExercises = (
     average,
   };
 };
-try {
-  const { target, daily_exercises } = parseArguments(process.argv);
-  console.log(calculateExercises(target, daily_exercises));
-} catch (error: unknown) {
-  let errorMessage = "Something bad happened.";
-  if (error instanceof Error) {
-    errorMessage += " Error: " + error.message;
+
+if (process.argv[1] === import.meta.filename) {
+  try {
+    const { target, daily_exercises } = parseArguments(process.argv);
+    console.log(calculateExercises(target, daily_exercises));
+  } catch (error: unknown) {
+    let errorMessage = "Something bad happened.";
+    if (error instanceof Error) {
+      errorMessage += " Error: " + error.message;
+    }
+    console.log(errorMessage);
   }
-  console.log(errorMessage);
 }
