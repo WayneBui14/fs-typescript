@@ -1,6 +1,7 @@
 import express from "express";
 import patientService from "../services/patientService.ts";
-import toNewPatient from "../utils.ts";
+import { NewPatientSchema } from "../utils.ts";
+import { z } from "zod";
 
 const router = express.Router();
 
@@ -10,16 +11,16 @@ router.get("/", (_req, res) => {
 
 router.post("/", (req, res) => {
   try {
-    // Validate dữ liệu trước khi thêm
-    const newPatient = toNewPatient(req.body);
+    // Zod thực hiện parse và validate dữ liệu cùng lúc
+    const newPatient = NewPatientSchema.parse(req.body);
     const addedEntry = patientService.addPatient(newPatient);
     res.json(addedEntry);
   } catch (error: unknown) {
-    let errorMessage = "Something went wrong.";
-    if (error instanceof Error) {
-      errorMessage += " Error: " + error.message;
+    if (error instanceof z.ZodError) {
+      res.status(400).send({ error: error.issues });
+    } else {
+      res.status(400).send({ error: "Something went wrong." });
     }
-    res.status(400).send(errorMessage);
   }
 });
 
