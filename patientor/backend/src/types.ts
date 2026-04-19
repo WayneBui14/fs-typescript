@@ -1,7 +1,7 @@
 export interface Diagnosis {
   code: string;
   name: string;
-  latin?: string; // Dấu '?' vì trường này có thể không có
+  latin?: string;
 }
 
 export enum Gender {
@@ -10,6 +10,8 @@ export enum Gender {
   Other = "other",
 }
 
+export interface Entry {}
+
 export interface Patient {
   id: string;
   name: string;
@@ -17,8 +19,9 @@ export interface Patient {
   gender: Gender;
   ssn: string;
   occupation: string;
+  entries: Entry[];
 }
 
 export type NewPatient = Omit<Patient, "id">;
 
-export type NonSensitivePatient = Omit<Patient, "ssn">;
+export type NonSensitivePatient = Omit<Patient, "ssn" | "entries">;
