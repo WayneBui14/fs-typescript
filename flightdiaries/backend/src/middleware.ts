@@ -11,9 +11,14 @@ export const newDiaryParser = (req: Request, _res: Response, next: NextFunction)
   }
 };
 
-export const errorMiddleware = (error: unknown, _req: Request, res: Response, next: NextFunction) => {
+export const errorMiddleware = (error: unknown, req: Request, res: Response, next: NextFunction) => {
   if (error instanceof z.ZodError) {
-    res.status(400).send({ error: error.issues });
+    const errorMessages = error.issues.map((issue) => {
+      const field = issue.path[0] as string;
+      const value = req.body[field] !== undefined ? `: ${req.body[field]}` : '';
+      return `Incorrect ${field}${value}`;
+    });
+    res.status(400).send(`Error: ${errorMessages.join(', ')}`);
   } else {
     next(error);
   }
