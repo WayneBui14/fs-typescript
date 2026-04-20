@@ -13,3 +13,49 @@ Content-Type: application/json
 GET  http://localhost:3001/api/patients/d2773336-f723-11e9-8f0b-362b9e155667
 Content-Type: application/json
 
+###
+POST http://localhost:3001/api/patients/d2773336-f723-11e9-8f0b-362b9e155667/entries
+Content-Type: application/json
+
+{
+  "type": "HealthCheck",
+  "healthCheckRating": 0,
+  "specialist": "Dr. Smith",
+  "diagnosisCodes": ["A01"],
+  "description": "Routine check-up",
+  "date": "2022-01-01"
+}
+
+###
+POST http://localhost:3001/api/patients/d2773336-f723-11e9-8f0b-362b9e155667/entries
+Content-Type: application/json
+
+{
+  "type": "Hospital",
+  "discharge": {
+    "date": "2022-01-01",
+    "criteria": "Routine check-up"
+  },
+  "specialist": "Dr. Smith",
+  "diagnosisCodes": ["A01"],
+  "description": "Routine check-up",
+  "date": "2022-01-01"
+}
+
+###
+POST http://localhost:3001/api/patients/d2773336-f723-11e9-8f0b-362b9e155667/entries
+Content-Type: application/json
+
+{
+  "type": "OccupationalHealthcare",
+  "employerName": "Acme Corp",
+  "sickLeave": {
+    "startDate": "2022-01-01",
+    "endDate": "2022-01-01"
+  },
+  "specialist": "Dr. Smith",
+  "diagnosisCodes": ["A01"],
+  "description": "Routine check-up",
+  "date": "2022-01-01"
+}
+

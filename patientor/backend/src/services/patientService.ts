@@ -1,6 +1,13 @@
 import patientsData from "../../data/patients.ts";
-import type { Patient, NonSensitivePatient, NewPatient } from "../types.ts";
+import type {
+  Patient,
+  NonSensitivePatient,
+  NewPatient,
+  Entry,
+} from "../types.ts";
 import { v4 as uuid } from "uuid";
+import { EntrySchema } from "../utils.ts";
+import { z } from "zod";
 
 const patients: Patient[] = patientsData as Patient[];
 
@@ -23,12 +30,29 @@ const addPatient = (entry: NewPatient): Patient => {
   return newPatientEntry;
 };
 
-const getPatientId = (id: string): Patient | undefined => {
-  return patients.find((patient) => patient.id === id);
+const addEntry = (
+  patient: Patient,
+  entry: z.infer<typeof EntrySchema>,
+): Entry => {
+  const newEntry = {
+    id: uuid(),
+    ...entry,
+  } as Entry;
+  patient.entries.push(newEntry);
+  return newEntry;
+};
+
+const getPatientId = (id: string): Patient => {
+  const patient = patients.find((patient) => patient.id === id);
+  if (!patient) {
+    throw new Error("Patient not found");
+  }
+  return patient;
 };
 
 export default {
   getNonSensitiveEntries,
   addPatient,
   getPatientId,
+  addEntry,
 };

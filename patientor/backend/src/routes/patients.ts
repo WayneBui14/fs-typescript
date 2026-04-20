@@ -1,6 +1,6 @@
 import express from "express";
 import patientService from "../services/patientService.ts";
-import { NewPatientSchema } from "../utils.ts";
+import { NewPatientSchema, EntrySchema } from "../utils.ts";
 import { z } from "zod";
 
 const router = express.Router();
@@ -29,6 +29,24 @@ router.post("/", (req, res) => {
       res.status(400).send({ error: error.issues });
     } else {
       res.status(400).send({ error: "Something went wrong." });
+    }
+  }
+});
+
+router.post("/:id/entries", (req, res) => {
+  try {
+    const patient = patientService.getPatientId(req.params.id);
+    if (!patient) {
+      res.status(404).send({ error: "Patient not found." });
+    }
+    const newEntry = EntrySchema.parse(req.body);
+    const addedEntry = patientService.addEntry(patient, newEntry);
+    res.json(addedEntry);
+  } catch (error: unknown) {
+    if (error instanceof z.ZodError) {
+      res.status(400).send({ error: error.issues });
+    } else {
+      res.status(500).send({ error: "Internal server error" });
     }
   }
 });
