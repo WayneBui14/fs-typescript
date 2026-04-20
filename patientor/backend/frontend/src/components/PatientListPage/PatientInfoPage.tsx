@@ -6,8 +6,13 @@ import { Typography } from "@mui/material";
 import MaleIcon from "@mui/icons-material/Male";
 import FemaleIcon from "@mui/icons-material/Female";
 import TransgenderIcon from "@mui/icons-material/Transgender";
+import { Diagnosis } from "../../types";
 
-const PatientInfoPage = () => {
+interface Props {
+  diagnoses: Diagnosis[];
+}
+
+const PatientInfoPage = ({ diagnoses }: Props) => {
   const { id } = useParams<{ id: string }>();
   const [patient, setPatient] = useState<Patient>();
 
@@ -45,9 +50,14 @@ const PatientInfoPage = () => {
           </p>
           {entry.diagnosisCodes && (
             <ul>
-              {entry.diagnosisCodes.map((code) => (
-                <li key={code}>{code}</li>
-              ))}
+              {entry.diagnosisCodes.map((code) => {
+                const diagnosis = diagnoses.find((d) => d.code === code);
+                return (
+                  <li key={code}>
+                    {code} {diagnosis ? diagnosis.name : null}
+                  </li>
+                );
+              })}
             </ul>
           )}
         </div>
