@@ -61,5 +61,11 @@ export interface Patient {
   dateOfBirth?: string;
   entries: Entry[];
 }
+
+type UnionOmit<T, K extends string | number | symbol> = T extends unknown
+  ? Omit<T, K>
+  : never;
+export type EntryWithoutId = UnionOmit<Entry, "id">;
+
 export type NewPatient = Omit<Patient, "id">;
 export type PatientFormValues = Omit<Patient, "id" | "entries">;
