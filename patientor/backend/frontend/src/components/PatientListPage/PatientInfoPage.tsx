@@ -67,6 +67,7 @@ const PatientInfoPage = ({ diagnoses }: Props) => {
         onSubmit={submitNewEntry}
         onCancel={() => setError(undefined)}
         error={error}
+        diagnoses={diagnoses}
       />
       <Typography variant="h6">Entries</Typography>
       {patient.entries.map((entry) => (
